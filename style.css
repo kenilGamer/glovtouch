@@ -336,7 +336,13 @@ a{
         min-width:80px;
         -webkit-filter: saturate(2);
     }
-
+    #page2{
+        width: 100%;
+        min-height: 150vh;
+        padding: 10px;
+        background-color: #213244;
+        color: #ffffffe0;
+    }
     .class-p{
         display: flex;
         gap: 1px;
