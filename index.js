@@ -47,6 +47,34 @@ addEventListener("load", () => {
   });
 });
 document.addEventListener("DOMContentLoaded", function () {
+
+  function navbar() {
+    let nav = false;
+    const mbnav = gsap.timeline();
+    const mbnav_ = gsap.timeline();
+    const right_mobile_nav = document.querySelector(".right_mobile_nav");
+    const nav_line_1 = document.querySelector(".nav_line_1");
+    const nav_line_2 = document.querySelector(".nav_line_2");
+    const mobile_nav_ = document.querySelector(".mobile_nav_");
+
+    // Event listener for mobile nav click
+    right_mobile_nav.addEventListener("click", () => {
+      if (nav) {
+        nav = false;
+        mbnav_
+          .to(nav_line_1, { transform: "rotate(0deg)" }, "a")
+          .to(nav_line_2, { transform: "rotate(0deg)" }, "a")
+          .to(mobile_nav_, { right: -100 + "vw" });
+      } else {
+        nav = true;
+        mbnav
+          .to(nav_line_1, { transform: "rotate(45deg)", zIndex: 100000 }, "a")
+          .to(nav_line_2, { transform: "rotate(-45deg)", zIndex: 100000 }, "a")
+          .to(mobile_nav_, { right: 0, ease: "bounce.out", duration: 2.5 });
+      }
+    });
+  }
+
   function splitStrings() {
     function splitString(str) {
       let splittedTextHtml = "",
@@ -158,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
         start: "top 70%",
         end: "top 0%",
         // pin: true,
-        markers: true,
+        // markers: true,
         scrub: 3,
       },
     });
@@ -194,6 +222,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // ease: "power3.out",
     })
   }
+
+  navbar();
   splitpage2();
   page1();
   page2();
