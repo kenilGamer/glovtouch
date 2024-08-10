@@ -299,7 +299,7 @@ a{
         height: 100vh;
         position: relative;
         background-position: center;
-        background-image: url("../imgs/image\ 1.png");
+        background-image: url("./imgs/image\ 1.png");
         background-repeat: no-repeat;
         background-size: cover;
         padding: 0px;
