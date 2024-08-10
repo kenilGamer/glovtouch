@@ -47,6 +47,26 @@ addEventListener("load", () => {
   });
 });
 document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('.nav-r a').forEach(link => {
+    link.addEventListener('mouseover', function(event) {
+        const particleCount = 30; // Number of particles
+        const particleContainer = document.createElement('div');
+        particleContainer.classList.add('particle-container');
+        this.appendChild(particleContainer);
+
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('span');
+            particle.classList.add('particle');
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.top = `${Math.random() * 100}%`;
+            particleContainer.appendChild(particle);
+        }
+
+        setTimeout(() => {
+            particleContainer.remove(); // Remove particles after animation ends
+        }, 600); // Match this duration with your CSS animation time
+    });
+});
 
   function navbar() {
     let nav = false;
