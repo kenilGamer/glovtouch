@@ -63,8 +63,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         setTimeout(() => {
-            particleContainer.remove(); // Remove particles after animation ends
-        }, 600); // Match this duration with your CSS animation time
+            particleContainer.remove(); 
+        }, 600); 
     });
 });
 
@@ -242,9 +242,72 @@ document.addEventListener("DOMContentLoaded", function () {
       // ease: "power3.out",
     })
   }
+  function page3(){
+  function splitpage3() {
+    function splitString(str) {
+      let splittedTextHtml = "",
+        generatedHTML = "";
+      let string = str.textContent;
+      let i;
+      for (i = 0; i < string.length; i++) {
+        splittedTextHtml += `
+      <span char="${string[i]}" style="--totalChars:${
+          string.length
+        };--index:${i};--delay:${i * 100}ms;--duration:${
+          string.length * 100
+        }ms">
+      ${string[i]}
+      </span>`;
+      }
+
+      generatedHTML = `<div>${splittedTextHtml}</div>`;
+      str.innerHTML = generatedHTML;
+    }
+
+    function splittingInit() {
+      let splitCharArr = document.querySelectorAll(".split-page3");
+      splitCharArr.forEach((str) => {
+        splitString(str);
+      });
+    }
+    splittingInit();
+  }
+  splitpage3()
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".page3 .page3-l",
+        scroller: "#main",
+        toggleActions: "restart none none reverse",
+        start: "top 120%",
+        end: "top 0%",
+        // pin: true,
+        // markers: true,
+        scrub: 3,
+      },
+    });
+    
+    tl.from(".page3-l span", {
+      opacity: 0,
+      rotate: -45,
+      x: -100,
+      duration: 1,
+      stagger: -0.5,
+      // ease: "bounce.in",
+    },"b")
+    tl.from(".page3-r span", {
+      opacity: 0,
+      rotate:45,
+      x: 100,
+      duration: 1,
+      stagger: 0.5,
+      // ease: "bounce.in",
+    },'b')
+ 
+  }
 
   navbar();
   splitpage2();
   page1();
   page2();
+  page3();
 });
