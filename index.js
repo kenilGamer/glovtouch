@@ -5,8 +5,8 @@ const locoScroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
   smooth: true,
   smoothMobile: 0.1,
-  inertia: 0.6,
-  multiplier: 0.7,
+  inertia: 0.3,
+  multiplier: 0.9,
 });
 locoScroll.on("scroll", ScrollTrigger.update);
 ScrollTrigger.scrollerProxy("#main", {

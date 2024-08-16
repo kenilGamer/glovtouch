@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
-    <title>Document</title>
+    <link rel="shortcut icon" href="/imgs/logo.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/imgs/logo.jpg">
+    <title>Glovtouch</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
@@ -20,7 +22,14 @@
             <div class="nav-r">
                 <a href="#">Home</a>
                 <a href="#page2">About</a>
-                <a href="#page3">Products</a>
+                <div class="dropdown">
+                    <a >Products</a>
+                    <div class="dropdown-content">
+                        <a href="#page3">Latex</a>
+                        <a href="#page3">Vinyl</a>
+                        <a href="#page3">NItrile</a>
+                    </div>
+                </div>
                 <!-- <a href="#">Services</a> -->
                 <a href="#">Contact</a>
             </div>
@@ -44,6 +53,9 @@
                 <a href="#">Contact</a>
               </div>
             </div>
+          </div>
+          <div class="mainpage1">
+            <!-- <img src="./imgs/WhatsApp Image 2024-08-16 at 13.12.35_d319fb7c.jpg" alt=""> -->
           </div>
         <div class="page1">
             <div class="section1">
@@ -85,7 +97,7 @@
             <div class="header3">
                <h1 class="split-page3 page3-l h1-l">Prod</h1><h1 class="split-page3 page3-r h1-r">ucts</h1>
             </div>
-            <div class="page3-c">
+            <div class="page3-c" id="products">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
@@ -134,7 +146,7 @@
             </div>
         </div>
         <div id="page4" class="page4">
-            
+            <div class=""></div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
