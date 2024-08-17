@@ -31,18 +31,24 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
 addEventListener("load", () => {
-  let links = document.querySelectorAll("a");
+  let links = document.querySelectorAll("a"); // Ensure you select correct links
   links.forEach((link) => {
     link.addEventListener("click", (event) => {
       event.preventDefault();
       let targetId = link.getAttribute("href");
-      let targetElement = document.querySelector(targetId);
-      locoScroll.scrollTo(targetElement.offsetTop);
-      gsap.to(locoScroll.scroll, {
-        scrollTo: { y: targetElement.offsetTop },
-        duration: 6,
-        // ease: "power4.inOut",
-      });
+
+      // Ensure targetId is valid and corresponds to an element on the page
+      if (targetId.startsWith('#')) {
+        let targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          locoScroll.scrollTo(targetElement);
+        } else {
+          console.error("Target element not found:", targetId);
+        }
+      } else {
+        // If it's a URL, handle it differently, maybe open it in a new tab
+        window.open(targetId, '_blank');
+      }
     });
   });
 });
@@ -311,3 +317,6 @@ document.addEventListener("DOMContentLoaded", function () {
   page2();
   page3();
 });
+
+// If you want to select an anchor with a specific href
+

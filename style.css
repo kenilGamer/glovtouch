@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html,
@@ -15,7 +15,8 @@ body {
   height: 100%;
   width: 100%;
   user-select: none;
-  background: #caecf9;
+  /* font-family: font1; */
+  /* background: #caecf9; */
 }
 
 .split-text {
@@ -352,7 +353,7 @@ a {
   width: 100%;
   height: 100vh;
   padding: 20px;
-  background: #caecf9;
+  /* background: #caecf9; */
 }
 
 .page3-c {
@@ -455,6 +456,7 @@ a {
 }
 
 .flip-card-front {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   background: linear-gradient(
     120deg,
     rgb(196, 252, 255) 60%,
@@ -606,6 +608,9 @@ a {
 }
 
 @media (max-width: 750px) {
+  body{
+    background: #caecf9; 
+  }
   .page1 {
     width: 100%;
     height: 100vh;
