@@ -251,7 +251,7 @@ a {
   width: 100%;
   height: 100vh;
   padding: 10px;
-  background: #caecf9;
+  /* background: #caecf9; */
 }
 
 .header {
@@ -501,15 +501,22 @@ a {
   width: 100%;
   height: 100vh;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .page4 h1{
   font-size: 72px;
   
 }
 .page4-c{
+  width: 100%;
+  height: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 40px;
 }
 /* From Uiverse.io by alexmaracinaru */ 
 .card {
@@ -517,7 +524,7 @@ a {
   height: 400px;
   background: #3405a3;
   border-radius: 15px;
-  box-shadow: 1px 5px 60px 0px #100a886b;
+  /* box-shadow: 1px 5px 60px 0px #100a886b; */
  }
  
  .card .card-border-top {
@@ -605,7 +612,7 @@ a {
 
   #page2 {
     width: 100%;
-    min-height: 200vh;
+    min-height: 10vh;
     padding: 10px;
 
   }
@@ -673,9 +680,7 @@ a {
 }
 
 @media (max-width: 750px) {
-  body{
-    background: #caecf9; 
-  }
+
   .page1 {
     width: 100%;
     height: 100vh;
@@ -775,7 +780,7 @@ a {
     overflow: hidden;
   }
   #page3 {
-    margin-top: 50vh;
+    margin-top: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -785,7 +790,7 @@ a {
 
   }
   .page3-c {
-    flex-direction: column;
+    flex-direction: column-reverse;
     display: flex;
     gap: 20px;
     /* flex-direction: column; */

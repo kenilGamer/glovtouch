@@ -148,14 +148,28 @@ document.addEventListener("DOMContentLoaded", function () {
       stagger: 0.1,
       // ease: "power3.out",
     });
-    tl.from(".title span", {
+    let tl2 = gsap.timeline(
+      {
+        scrollTrigger: {
+          trigger: ".page1",
+          scroller: "#main",
+          start: "top 0%",
+          end: "top -100%",
+          toggleActions: "play pause resume reverse",
+          scrub: 3,
+          pin: true,
+          markers: true,
+        },
+      }
+    );
+    tl2.from(".title span", {
       opacity: 0,
       y: 100,
       duration: 1,
       stagger: 0.02,
       // ease: "power3.out",
     });
-    tl.from(
+    tl2.from(
       ".description span",
       {
         opacity: 0,
@@ -165,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       "-=1.2  "
     );
-    tl.to(".button", {
+    tl2.to(".button", {
       opacity: 1,
       y: 100,
       duration: 0.2,
