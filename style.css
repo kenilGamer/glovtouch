@@ -502,12 +502,17 @@ a {
   height: 100vh;
   padding: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 .page4 h1{
+  color:#399DF1;
   font-size: 72px;
-  
+  letter-spacing: -1px;
+  text-shadow: 2px 2px 4px rgba(51, 135, 150, 0.877);
+
 }
 .page4-c{
   width: 100%;
@@ -524,7 +529,7 @@ a {
   height: 400px;
   background: #3405a3;
   border-radius: 15px;
-  
+  /* margin-bottom: 400px;   */
   /* box-shadow: 1px 5px 60px 0px #100a886b; */
  }
  
@@ -547,11 +552,13 @@ a {
  
  .card .job {
   font-weight: 400;
+  margin: 5px;
   color: white;
   display: block;
   text-align: center;
   padding-top: 5px;
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 15px;
  }
  
  .card .img {
@@ -574,7 +581,7 @@ a {
   margin: auto;
   border-radius: 8px;
   border: none;
-  margin-top: 120px;
+  margin-top: 80px;
   background: #6b64f3;
   color: white;
   font-weight: 600;
@@ -588,6 +595,24 @@ a {
    height: auto;
    object-fit: cover;
  }
+ 
+  @media (max-width: 1200px) {
+    body {
+      font-size: 16px;
+    }
+   .section1 {
+      font-size: 16px;
+    }
+   .description {
+      font-size: 18px;
+    }
+   .header h1 {
+      font-size: 28px;
+    }
+   .contact-info p {
+      font-size: 14px;
+    }
+  }
 @media (max-width: 900px) {
   .section1 {
     color: #fff;
