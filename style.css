@@ -7,7 +7,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 html,
@@ -45,6 +46,7 @@ body {
   align-items: center;
   /* justify-content: center; */
   background-color: #bce4f5;
+
 }
 
 nav {
@@ -515,6 +517,7 @@ a {
 
 }
 .page4-c{
+  overflow: auto;
   width: 100%;
   height: 100%;
   display: flex;
@@ -527,7 +530,7 @@ a {
 .card {
   width: 300px;
   height: 400px;
-  background: #3405a3;
+  background: #26567a;
   border-radius: 15px;
   /* margin-bottom: 400px;   */
   /* box-shadow: 1px 5px 60px 0px #100a886b; */
@@ -536,7 +539,7 @@ a {
  .card .card-border-top {
   width: 60%;
   height: 3%;
-  background: #6b64f3;
+  background: #888b8c;
   margin: auto;
   border-radius: 0px 0px 15px 15px;
  }
@@ -558,7 +561,7 @@ a {
   text-align: center;
   padding-top: 5px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 20px;
  }
  
  .card .img {
@@ -582,13 +585,13 @@ a {
   border-radius: 8px;
   border: none;
   margin-top: 80px;
-  background: #6b64f3;
+  background: #888b8c;
   color: white;
   font-weight: 600;
  }
  
  .card button:hover {
-  background: #534bf3;
+  background: #399DF1;
  }
  .team {
    width: 100%;
@@ -774,7 +777,7 @@ a {
     letter-spacing: -3px;
   }
   #page2 {
-    margin-top: 10vh;
+    margin-top: 40vh;
     width: 100%;
     min-height: 100vh;
     padding: 20px;
@@ -833,6 +836,21 @@ a {
     align-items: center;
     padding: 30px;
     border-radius: 10px;
+  }
+  .page4{
+    margin-top: 80vh;
+    min-height: 280vh;
+
+  }
+  .page4-c{
+    overflow: auto;
+    width: 100%;
+    min-height: 200vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
   .nav {
     display: none;
@@ -930,54 +948,12 @@ a {
     color: var(--secondary-color);
   }
 }
-.about{
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* margin-top: 50px; */
-  /* color: white; */
-  padding: 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-.about_left{
-  width: 50%;
-  float: left;
-  padding: 20px;
-  height: 100%;
-  /* background: #d1c8c8; */
-}
-.about_left h1{
-  /* color: white; */
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 66px;
-  text-align: center;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
-}
-.about_right{
-  width: 50%;
-  float: right;
-  padding: 20px;
-  height: 100%;
-  background: url("/imgs/_2d535382-60a6-4c50-b5ee-c89e585ad837.jpeg") repeat scroll ;
-  background-size: cover;
-  border-radius: 5px;
-  transition: 0.3s;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  /* z-index: 1; */
-  overflow: hidden; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+
 
 @media screen and (max-width: 768px) {
+  footer{
+    top: 100vh;
+  }
   .about{
     width: 100%;
     height: 200vh;

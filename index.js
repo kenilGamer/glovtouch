@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
           toggleActions: "play pause resume reverse",
           scrub: 3,
           pin: true,
-          markers: true,
+          // markers: true,
         },
       }
     );
