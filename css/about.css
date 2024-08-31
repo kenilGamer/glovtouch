@@ -195,7 +195,7 @@ nav {
     float: right;
     padding: 20px;
     height: 100%;
-    background: url("../imgs/_2d535382-60a6-4c50-b5ee-c89e585ad837.jpeg") repeat scroll ;
+    background: url("/imgs/_2d535382-60a6-4c50-b5ee-c89e585ad837.jpeg") repeat scroll ;
     background-size: cover;
     border-radius: 5px;
     transition: 0.3s;
