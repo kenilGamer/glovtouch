@@ -16,6 +16,7 @@ body {
   height: 100%;
   width: 100%;
   user-select: none;
+  /* background: #000; */
   /* font-family: font1; */
   /* background: #caecf9; */
 }
@@ -29,13 +30,23 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url("./imgs//WhatsApp\ Image\ 2024-08-16\ at\ 13.12.35_d319fb7c.jpg") no-repeat 
+  background: url("./imgs/Fri_12_07_2024_20_09_00.png") no-repeat 
   center;
   background-size: 100% 100%;
+}
+.mainpage1::after{
+  content: '';
+  position: absolute;
+ left: 0;
+ bottom: -30px;
+  width: 100%;
+  /* height: 100%; */
+  border: 2px solid #000;
 }
 .page1 {
   width: 100%;
   height: 100vh;
+  top: 50px;
   position: relative;
   background-position: center;
   background-image: url("./imgs/mainpage2.jpg");
@@ -223,7 +234,9 @@ nav {
   font-family: 'Times New Roman', Times, serif;
   width: 600px;
 }
-
+.section1 h1{
+  text-align: center;
+}
 .section1 h1 span {
   letter-spacing: -12px;
   display: inline-block;
@@ -233,6 +246,7 @@ nav {
   font-size: 18px;
   line-height: 1.5;
   margin: 30px;
+  text-align: left;
 }
 
 .button {

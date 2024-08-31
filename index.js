@@ -158,7 +158,6 @@ document.addEventListener("DOMContentLoaded", function () {
           toggleActions: "play pause resume reverse",
           scrub: 3,
           pin: true,
-          // markers: true,
         },
       }
     );
@@ -225,8 +224,6 @@ document.addEventListener("DOMContentLoaded", function () {
         toggleActions: "restart none none reverse",
         start: "top 70%",
         end: "top 0%",
-        // pin: true,
-        // markers: true,
         scrub: 3,
       },
     });
@@ -300,8 +297,6 @@ document.addEventListener("DOMContentLoaded", function () {
         toggleActions: "restart none none reverse",
         start: "top 120%",
         end: "top 0%",
-        // pin: true,
-        // markers: true,
         scrub: 3,
       },
     });
