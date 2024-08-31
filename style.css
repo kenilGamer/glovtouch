@@ -30,9 +30,25 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url("./imgs/Fri_12_07_2024_20_09_00.png") no-repeat 
+  background: url("./imgs/WhatsApp\ Image\ 2024-08-31\ at\ 12.09.58_bb2e66d4.jpg") no-repeat 
   center;
   background-size: 100% 100%;
+
+}
+.imgs{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgs img {
+  width: 95%;
+  /* height: 100%; */
 }
 .mainpage1::after{
   content: '';
